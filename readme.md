@@ -3,7 +3,7 @@
 [OOP Game Training](https://github.com/sf-wdi-31/oop-game-training/ "OOP Game Training")
 
 ## Assignment Reflection
-TBD 
+This assignment was a bit tough because the overall planning of a project is always the biggest challenge for me. I have a difficult time conceptually visualing abstract ideas like a math problem as an object. I also find it hard to think through all the intricate details of game logic.
 
 
 
