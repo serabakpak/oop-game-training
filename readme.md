@@ -1,3 +1,84 @@
+# Sera Bak
+
+[OOP Game Training](https://github.com/sf-wdi-31/oop-game-training/ "OOP Game Training")
+
+## Assignment Reflection
+TBD 
+
+
+
+
+## User Stories & Game Mechanics
+
+- each user’s car moves horizontally from left to right by solving simple math problems
+- user is shown a random math problem and 3 multiple choice answers which can be chosen with different keys
+- with every correct answer, user moves to the right a designated distance (10% of racetrack length)
+- if user answers a question incorrectly, the car will not move - give user options to try again or skip
+- whoever reaches the end of the racetrack first by answering 10 questions correctly wins the game
+
+## Objects
+
+### Car Object
+#### Properties
+
+- color
+- name
+
+### Racetrack (Board) Object
+#### Properties
+
+- length
+
+
+### Math-Problems Object
+#### Properties
+
+- operands
+- operators - + or -
+- correct answer
+- possible answers
+
+#### Methods
+
+- generateMathProbs() (function - generate random math problems)
+
+### Game Object
+#### Properties
+
+- problems
+- cars
+- racetrack
+- score
+
+#### Methods
+
+- reset()
+- gameStarts() (function to display message to start the game)
+- displayProblem() (function to display math problem)
+- keepTally() - keep tally of correct answers
+- checkWinner()
+- isCorrect() (function - determine whether answer is correct or not)
+- celebrate() (function to display who the winner is)
+
+## Development Stories
+
+- each user’s car moves horizontally from left to right by solving simple math problems
+    - use html/css to build a racetrack with two cars
+    - build two sections that flank the racetrack (left and right)
+    - gameStarts() function will display message to start the game
+- user is shown a random math problem and 3 multiple choice answers which can be chosen with different keys
+    - generateMathProbs() - create math problems with 3 operands and 2 operators; randomize both operands (0-9) and operators (+/-)
+    - append problems to page
+- with every correct answer, user moves to the right a designated distance (10% of racetrack length)
+    - add keypress event listener to run move() function (using .animate())
+- if user answers a question incorrectly, the car will not move - give user options to try again or skip
+- whoever reaches the end of the racetrack first by answering 10 questions correctly wins the game
+    - checkWinner() function checks to see if game has been won
+    - display who won
+
+
+
+
 <!--
 Creator: <Name>
 Location: SF
